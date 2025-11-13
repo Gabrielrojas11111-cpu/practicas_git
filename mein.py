@@ -5,7 +5,7 @@ caudrado=calclar_area_c
 
 
 #programa
-print("hola mundo")
+print("pratica_git - 13-11-25")
 resultado= suma(5,10)
 print(resultado)
 
