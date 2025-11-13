@@ -1,5 +1,5 @@
 from funtions import suma
-from calculos import calclar_area_c,calcular_area_t
+from calculos import calclar_area_c,calcular_area_t,calcular_area_cu
 triangulo=calcular_area_t
 caudrado=calclar_area_c
 
@@ -18,7 +18,8 @@ def mostrar_menu():
     print("1. Área de un triángulo")
     print("2. Área de un cuadrado")
     print("3.suma")
-    print("4. Salir")
+    print("4.area del circulo")
+    print("5. Salir")
 
 def menu_git():
     while True:
@@ -39,9 +40,12 @@ def menu_git():
             a = float(input("el numero a sumar: "))
             b = float(input("el siguiente numero para sumar: "))
             print("area del cuadradro:", suma(a,b))
-                      
-        
-        if opcion == "4":
+
+        elif opcion =="4":
+            radio=float(input("ingresar la area de circulo: "))
+            print("la area de un circulo es:",calcular_area_cu(radio))
+
+        if opcion == "5":
             print("¡Hasta luego!")
             break
 
